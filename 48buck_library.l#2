@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22,28 +22,28 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -114,7 +114,6 @@
 <wire x1="2" y1="1.4" x2="2" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.6" x2="-2.3" y2="-1.6" width="0.127" layer="21"/>
 <rectangle x1="-2.3" y1="-1.6" x2="2" y2="1.4" layer="1"/>
-<smd name="PAD" x="-0.1" y="-0.1" dx="3.81" dy="1.9304" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -125,10 +124,10 @@
 <pin name="RT/SYNC" x="0" y="-15.24" length="middle"/>
 <pin name="COMP" x="0" y="-22.86" length="middle"/>
 <pin name="FB" x="0" y="-30.48" length="middle"/>
-<pin name="SS" x="12.7" y="-40.64" length="middle" rot="R90"/>
-<pin name="RAMP" x="15.24" y="-40.64" length="middle" rot="R90"/>
-<pin name="AGND" x="20.32" y="-40.64" length="middle" rot="R90"/>
-<pin name="PGND" x="25.4" y="-40.64" length="middle" rot="R90"/>
+<pin name="SS" x="15.24" y="-40.64" length="middle" rot="R90"/>
+<pin name="RAMP" x="20.32" y="-40.64" length="middle" rot="R90"/>
+<pin name="AGND" x="25.4" y="-40.64" length="middle" rot="R90"/>
+<pin name="PGND" x="30.48" y="-40.64" length="middle" rot="R90"/>
 <pin name="VCCX" x="45.72" y="-30.48" length="middle" rot="R180"/>
 <pin name="VOUT" x="45.72" y="-27.94" length="middle" rot="R180"/>
 <pin name="DEMB" x="45.72" y="-22.86" length="middle" rot="R180"/>
@@ -143,7 +142,6 @@
 <wire x1="5.08" y1="-35.56" x2="40.64" y2="-35.56" width="0.254" layer="94"/>
 <wire x1="40.64" y1="-35.56" x2="40.64" y2="7.62" width="0.254" layer="94"/>
 <wire x1="40.64" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="PAD" x="30.48" y="-40.64" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -164,7 +162,6 @@
 <connect gate="G$1" pin="HB" pad="18"/>
 <connect gate="G$1" pin="HO" pad="19"/>
 <connect gate="G$1" pin="LO" pad="15"/>
-<connect gate="G$1" pin="PAD" pad="PAD"/>
 <connect gate="G$1" pin="PGND" pad="14"/>
 <connect gate="G$1" pin="RAMP" pad="5"/>
 <connect gate="G$1" pin="RT/SYNC" pad="3"/>
