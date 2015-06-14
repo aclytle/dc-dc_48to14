@@ -15707,12 +15707,6 @@ using ameteur radio standard layout</description>
 <part name="J1" library="powerpoles" deviceset="POWERPOLE_POWER" device="45A_HORIZONTAL_DRILL"/>
 <part name="J2" library="powerpoles" deviceset="POWERPOLE_POWER" device="45A_HORIZONTAL_DRILL"/>
 <part name="J3" library="powerpoles" deviceset="POWERPOLE_POWER" device="10AWG"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C0805" value="10uF"/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C0805" value=".1uF"/>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0805" value=".001uF"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
-<part name="PE8" library="supply1" deviceset="PE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15732,8 +15726,8 @@ using ameteur radio standard layout</description>
 <instance part="R2" gate="G$1" x="-25.4" y="0"/>
 <instance part="R3" gate="G$1" x="-22.86" y="-20.32" rot="R270"/>
 <instance part="R4" gate="G$1" x="-10.16" y="-30.48" rot="R270"/>
-<instance part="R5" gate="G$1" x="55.88" y="-35.56" rot="R270"/>
-<instance part="R6" gate="G$1" x="55.88" y="-55.88" rot="R270"/>
+<instance part="R5" gate="G$1" x="66.04" y="-38.1" rot="R270"/>
+<instance part="R6" gate="G$1" x="66.04" y="-58.42" rot="R270"/>
 <instance part="R7" gate="G$1" x="60.96" y="-17.78" rot="R270"/>
 <instance part="C2" gate="G$1" x="63.5" y="10.16"/>
 <instance part="C3" gate="G$1" x="7.62" y="-43.18"/>
@@ -15746,7 +15740,7 @@ using ameteur radio standard layout</description>
 <instance part="GND3" gate="1" x="7.62" y="-50.8"/>
 <instance part="GND4" gate="1" x="15.24" y="-73.66"/>
 <instance part="GND5" gate="1" x="20.32" y="-43.18"/>
-<instance part="GND6" gate="1" x="55.88" y="-63.5"/>
+<instance part="GND6" gate="1" x="66.04" y="-66.04"/>
 <instance part="L1" gate="G$1" x="71.12" y="-5.08" rot="R90"/>
 <instance part="JP1" gate="G$1" x="-58.42" y="-7.62" rot="MR0"/>
 <instance part="R8" gate="G$1" x="-40.64" y="0" rot="R90"/>
@@ -15760,20 +15754,14 @@ using ameteur radio standard layout</description>
 <instance part="C10" gate="G$1" x="93.98" y="-7.62"/>
 <instance part="C11" gate="G$1" x="104.14" y="-7.62"/>
 <instance part="C12" gate="G$1" x="114.3" y="-7.62"/>
-<instance part="R12" gate="G$1" x="55.88" y="-45.72" rot="R270"/>
-<instance part="R13" gate="G$1" x="60.96" y="-40.64" rot="R180"/>
+<instance part="R12" gate="G$1" x="66.04" y="-48.26" rot="R270"/>
+<instance part="R13" gate="G$1" x="76.2" y="-43.18" rot="R180"/>
 <instance part="R14" gate="G$1" x="-20.32" y="5.08" rot="R270"/>
 <instance part="R15" gate="G$1" x="-15.24" y="0"/>
 <instance part="C16" gate="G$1" x="-12.7" y="-5.08" rot="R270"/>
-<instance part="J1" gate="G$1" x="187.96" y="-10.16"/>
+<instance part="J1" gate="G$1" x="139.7" y="-10.16"/>
 <instance part="J2" gate="G$1" x="-88.9" y="12.7" rot="MR0"/>
 <instance part="J3" gate="G$1" x="-68.58" y="12.7" smashed="yes" rot="MR0"/>
-<instance part="C13" gate="G$1" x="134.62" y="-7.62"/>
-<instance part="C14" gate="G$1" x="144.78" y="-7.62"/>
-<instance part="C15" gate="G$1" x="154.94" y="-7.62"/>
-<instance part="C17" gate="G$1" x="165.1" y="-7.62"/>
-<instance part="C18" gate="G$1" x="45.72" y="-33.02"/>
-<instance part="PE8" gate="M" x="45.72" y="-40.64"/>
 </instances>
 <busses>
 </busses>
@@ -15809,8 +15797,11 @@ using ameteur radio standard layout</description>
 <pinref part="PE5" gate="M" pin="PE"/>
 <wire x1="83.82" y1="-15.24" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="129.54" y1="-15.24" x2="124.46" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-15.24" x2="124.46" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-15.24" x2="114.3" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="124.46" y="-15.24"/>
 <junction x="83.82" y="-15.24"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="-15.24" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
@@ -15824,25 +15815,6 @@ using ameteur radio standard layout</description>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="-12.7" x2="114.3" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="114.3" y="-15.24"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="177.8" y1="-15.24" x2="165.1" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="124.46" y="-15.24"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="-15.24" x2="154.94" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-15.24" x2="144.78" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-15.24" x2="134.62" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-15.24" x2="124.46" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-12.7" x2="134.62" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="134.62" y="-15.24"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="-12.7" x2="144.78" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="144.78" y="-15.24"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="-12.7" x2="154.94" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="154.94" y="-15.24"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="-12.7" x2="165.1" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="165.1" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="GND"/>
@@ -15857,10 +15829,6 @@ using ameteur radio standard layout</description>
 <junction x="-55.88" y="7.62"/>
 <pinref part="PE1" gate="M" pin="PE"/>
 <junction x="-78.74" y="0"/>
-</segment>
-<segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="PE8" gate="M" pin="PE"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15951,6 +15919,26 @@ using ameteur radio standard layout</description>
 <junction x="-10.16" y="-17.78"/>
 </segment>
 </net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="-30.48" x2="-15.24" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-35.56" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="FB"/>
+<wire x1="-10.16" y1="-35.56" x2="0" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="0" y1="-35.56" x2="0" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-10.16" y="-35.56"/>
+<wire x1="0" y1="-35.56" x2="0" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="0" y1="-58.42" x2="55.88" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="0" y="-35.56"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="-58.42" x2="55.88" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-53.34" x2="66.04" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<junction x="66.04" y="-53.34"/>
+</segment>
+</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
@@ -15994,8 +15982,9 @@ using ameteur radio standard layout</description>
 <pinref part="R13" gate="G$1" pin="S"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<junction x="55.88" y="-40.64"/>
-<junction x="55.88" y="-40.64"/>
+<wire x1="71.12" y1="-43.18" x2="66.04" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="71.12" y="-43.18"/>
+<junction x="66.04" y="-43.18"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -16019,6 +16008,45 @@ using ameteur radio standard layout</description>
 <wire x1="-48.26" y1="-7.62" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="-48.26" y1="-7.62" x2="-55.88" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VOUT"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-27.94" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-27.94" x2="66.04" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-27.94" x2="66.04" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="-27.94" x2="78.74" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-27.94" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="66.04" y="-27.94"/>
+<pinref part="R13" gate="G$1" pin="A"/>
+<wire x1="76.2" y1="-38.1" x2="76.2" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-33.02" x2="66.04" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="66.04" y="-33.02"/>
+<pinref part="U$1" gate="G$1" pin="VCCX"/>
+<wire x1="45.72" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-30.48" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="48.26" y="-27.94"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="-5.08" x2="114.3" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="104.14" y="-5.08"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="93.98" y="-5.08"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="-5.08" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="-5.08" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="114.3" y="-5.08"/>
+<wire x1="78.74" y1="-5.08" x2="83.82" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="78.74" y="-5.08"/>
+<junction x="83.82" y="-5.08"/>
+<wire x1="124.46" y1="-5.08" x2="129.54" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="124.46" y="-5.08"/>
+<pinref part="J1" gate="G$1" pin="V+"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16067,80 +16095,6 @@ using ameteur radio standard layout</description>
 <wire x1="-78.74" y1="25.4" x2="-55.88" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="25.4" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-55.88" y="17.78"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="R13" gate="G$1" pin="A"/>
-<wire x1="60.96" y1="-35.56" x2="60.96" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-30.48" x2="55.88" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VOUT"/>
-<wire x1="45.72" y1="-27.94" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-27.94" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="-27.94" x2="78.74" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-27.94" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VCCX"/>
-<wire x1="45.72" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-30.48" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="48.26" y="-27.94"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="-5.08" x2="114.3" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="104.14" y="-5.08"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="-5.08" x2="104.14" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="93.98" y="-5.08"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="-5.08" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="-5.08" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="114.3" y="-5.08"/>
-<wire x1="78.74" y1="-5.08" x2="83.82" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="78.74" y="-5.08"/>
-<junction x="83.82" y="-5.08"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="-5.08" x2="134.62" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="124.46" y="-5.08"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="-5.08" x2="144.78" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="134.62" y="-5.08"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="-5.08" x2="154.94" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="144.78" y="-5.08"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="-5.08" x2="165.1" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="154.94" y="-5.08"/>
-<pinref part="J1" gate="G$1" pin="V+"/>
-<wire x1="165.1" y1="-5.08" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="165.1" y="-5.08"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<junction x="45.72" y="-30.48"/>
-<wire x1="55.88" y1="-30.48" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="55.88" y="-30.48"/>
-<junction x="55.88" y="-27.94"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<junction x="55.88" y="-50.8"/>
-<wire x1="55.88" y1="-53.34" x2="55.88" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-50.8" x2="50.8" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-50.8" x2="50.8" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="-30.48" x2="-15.24" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-35.56" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="FB"/>
-<wire x1="-10.16" y1="-35.56" x2="0" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="0" y1="-35.56" x2="0" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-10.16" y="-35.56"/>
-<wire x1="0" y1="-35.56" x2="0" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="0" y="-35.56"/>
-<wire x1="50.8" y1="-58.42" x2="0" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
